@@ -7,7 +7,7 @@ const WeatherInfo = ({weartherData}) => {
         visibility,
         weather: [icon, description],
         main: { temp, humidity, feels_like },
-        wind: { speed },
+        wind: { speed }, 
         sys: { sunrise, sunset },
  } = weartherData
   return (
@@ -18,11 +18,12 @@ const WeatherInfo = ({weartherData}) => {
         <View style={styles.logo}>
             <Image style= {styles.logoIcon} 
             source={{uri:`http://openweathermap.org/img/wn/${icon}.png`}} /> 
-            <Text styles={styles.currentTemp}>{temp} °C </Text>
+            <Text style={styles.currentTemp}>{temp} °C </Text>
         </View>
-        <Text styles={styles.description}t>{description}</Text>
-        <View>
-            <View>
+        <Text style={styles.description}t>{description}</Text>
+        <View style={styles.extraInfo}>
+            <View style={styles.info}>
+                <Image style={smallIcon} source={require('./assets/humidity.png')} />
             </View>
         </View>
         </SafeAreaView>
