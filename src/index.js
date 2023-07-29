@@ -16,7 +16,7 @@ const Wearther = () => {
         try {
             setIsLoading(false);
             if (response.status === 200 ) {
-                const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units`);
+                const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metrics`);
                 // const response = await fetch(`https://accuweatherstefan-skliarovv1.p.rapidapi.com/getAlertsByLocationKey=${cityName}&appid${API_KEY}$units`);
                 const data = await response.json();
                 if (data.cod === 200) {
