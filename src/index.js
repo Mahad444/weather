@@ -33,7 +33,7 @@ const Wearther = () => {
 
         // remember my city name and show it on the screen when the app is opened
         useEffect(() => {
-            fetchWeatherData('London');
+            fetchWeatherData('Nairobi');
         }, []);
  // checking if the weather data is loading or not and if it is loading show the loading indicator
         if (isLoading) {
