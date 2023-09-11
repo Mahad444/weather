@@ -17,7 +17,7 @@ const WeatherInfo = ({weartherData}) => {
         <View style={styles.logo}>
             <Image style= {styles.logoIcon} 
             source={{uri:`http://openweathermap.org/img/wn/${icon}.png`}} /> 
-            <Text style={styles.currentTemp}>{temp} °C </Text>
+            <Text style={styles.currentTemp}>{temp} °F </Text>
         </View>
         <Text style={styles.description}t>{description}</Text>
         <View style={styles.extraInfo}>
