@@ -6,8 +6,8 @@ const WeatherInfo = ({weartherData}) => {
         name,
         visibility,
         weather: [icon, description],
-        main: { temp, humidity, feels_like },
-        wind: { speed }, 
+        main: { temp},
+        // wind: { speed }, 
  } = weartherData
   return (
       <SafeAreaView style={styles.container}>
