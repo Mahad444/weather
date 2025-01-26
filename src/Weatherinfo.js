@@ -18,6 +18,8 @@ const WeatherInfo = ({weartherData}) => {
             <Image style= {styles.logoIcon} 
             source={{uri:`http://openweathermap.org/img/wn/${icon}.png`}} /> 
             <Text style={styles.currentTemp}>{temp} °F </Text>
+            {/* degrees in celcius */}
+            <Text style={styles.currentTemp}>{((temp - 32) * 5 / 9).toFixed(2)} °C</Text>
         </View>
         <Text style={styles.description}t>{description}</Text>
         <View style={styles.extraInfo}>
